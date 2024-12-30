@@ -97,25 +97,39 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > ![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
 
 > **MODELING & MODEL EVALUATION**
->  Executed 
+>
+> CUSTOMER SEGMENTATION
+> The unsupervised machine learning techniques were used to group the customer into meaningful segments.
+>
+> Kmeans Analysis:
+> Elbow method to Identify the number of optimum clusters: 
+> ![Screenshot 2024-12-30 150348](https://github.com/user-attachments/assets/c10f314c-ceef-4466-8ea5-ba7f650c3a79)
+>
+> 3D view of Customer Clusters by Kmeans 
 > 
+> ![Screenshot 2024-12-30 150411](https://github.com/user-attachments/assets/664b8dba-3563-4b35-9560-5ca77a7a423e)
+>
+> Silhouette Analsysi & Score
 > 
->    
-
->**MODEL EVALUATION**
-The Model performance is evaluated based on training time, test & train score & ROC curve area. The scores are captured by executing the model on various hyperparameters and then selecting the best parameter.
+> ![Screenshot 2024-12-30 150505](https://github.com/user-attachments/assets/63fe7af1-018b-43d5-ab39-5149bb121eee)
 >
->${\color{crimson}ROC \space Curve \space Analysis}$
+> Customer Cluster Wise RFM Score:
+> 
+> ![Screenshot 2024-12-30 150819](https://github.com/user-attachments/assets/299e42a2-80c1-44e5-8698-03675ac76218)
 >
-> ![image](https://github.com/user-attachments/assets/d65279a1-3192-49a4-b312-6597c3d8c253)     \
+> Customer cluster-wise peak selling time
+> 
+> ![Screenshot 2024-12-30 150853](https://github.com/user-attachments/assets/4a0cd93b-1e82-48b7-abc5-23bd24448550)
 >
->${\color{crimson}Model \space Scores \space Comparison}$
+> Customer cluster-wise Top selling month 
+> ![Screenshot 2024-12-30 150918](https://github.com/user-attachments/assets/91092ece-b315-4856-b3c4-1cf9061b8574)
 >
->![image](https://github.com/user-attachments/assets/3a48d1b7-22c9-487a-b8e9-080e4e5c8012)
-
+> Tree MAP for Customer Segments based on RFM score
+> ![Screenshot 2024-12-30 150958](https://github.com/user-attachments/assets/adc1ab42-0a79-401b-b0c6-823fabeb338b)
+>
+> 
 >**CONCLUSION**
-> The SVC algorithm has scored better performance and accuracy in terms of prediction. The drawback with SVC is the time it takes to execute when compared to other machine learning algorithms, however, still acceptable within seconds for this model. The analysis of the area covered under the ROC curve also shows a good score for SVC which means the model will comparatively correctly rank a randomly chosen positive example. The SVC is the first choice for this classification scenario.  
-
+> 
 
 
    
