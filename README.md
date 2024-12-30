@@ -90,25 +90,17 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > - Created new features for Customer Segmentation using RFM Methodology.
 > - Reduce the data volume to execute the algorithms locally.
 >
-![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
-![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
-
-> **MODELING**
-> This is a classifier problem statement. To start with first have to baseline the model to collect the `ModelTrainingTime`, `TrainingAccuracyScore`, and `TestAccuracyScore`.
+> Pair Plot Analysis of New Features in Customer Segmentation
+> ![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
 > 
-> - $${\color{mediumblue}Baseline \space Model}$$ 
-> The baseline matrices are captured by executing & evaluating the following ML algorithms `LogisticRegression`, `KNeighborsClassifier`, `DecisionTreeClassifier`, and `SVC`.
->
->${\color{crimson}Baseline \space model \space score}$
->
-> ![image](https://github.com/user-attachments/assets/a1970a2b-ae22-4d7c-bb37-f5478cf2731a)
->
-> - $${\color{mediumblue}Model \space performance \space tuning}$$
-> The model is now tuned on various hyperparameters to obtain the best scoring. The `GridSearchCV` cross-validator is used for optimal model performance tuning.
->
->${\color{crimson}Tuned \space model \space score}$ 
->
->   ![image](https://github.com/user-attachments/assets/3872bf67-d053-43eb-ad18-abad359688c7) 
+> Correlation Matrix analysis in Customer Segmentation
+> ![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
+
+> **MODELING & MODEL EVALUATION**
+>  Executed 
+> 
+> 
+>    
 
 >**MODEL EVALUATION**
 The Model performance is evaluated based on training time, test & train score & ROC curve area. The scores are captured by executing the model on various hyperparameters and then selecting the best parameter.
