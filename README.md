@@ -148,9 +148,8 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >
 >**CONCLUSION**
 >
-> 
+>
 > **REFERENCES**    
 > - [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail)
 > - [SURPRISE](https://surprise.readthedocs.io/en/stable/index.html)
-> - [KAGGLE](https://www.kaggle.com/)
-
+> - [KAGGLE](https://www.kaggle.com/) 
