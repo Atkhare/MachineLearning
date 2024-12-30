@@ -13,7 +13,7 @@
 
 > **BUSINESS UNDERSTANDING**
 > 
-> CUSTOMER SEGMENTATION   
+> CUSTOMER SEGMENTATION
 The online sales data is available from retailers and is available at the [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail) for analysis. The business expects to use the RFM methodology, data mining techniques, and machine learning algorithms to derive meaningful customer segmentation, better understand customer purchase behavior, and identify the characteristics of customers in each segment.
 >
 > RECOMMENDATION SYSTEM
@@ -82,16 +82,13 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > |Ratings       | Movie ratings on a five-star (integral) scale from 1 to 5  | Integer       |
 > |Rating Date   | Movie rating date by customer                              | Date          |
 
-
-
-> **DATA PREPARATION**
-The data is first analyzed on the missing or NAN elements, then the data aggregation is done to analyze the trend & unique components column and row-wise. The data is being imputed for any missing/ unknown values. Also, the data encoding is done for categorical features. The final Dataframe is scaled using `StandardScaler' and split into Test & Train datasets. 
-
 > **FEATURE ANALYSIS**
-> - Analyzed imbalance in the Target class from the provided Dataframe. 
-> - The correlation between dataset features is being analyzed by generating the `Correlation Matrix Heatmap` over a scaled Dataframe.
-> - Executed `PCA` to analyze the scope for dimension reduction.
-> - Scored feature importance using `RandomForestClassifier` and `mutual_info_regression`
+> -  
+> - All Features in Customer Segmentation & Recommendation datasets are being analyzed for missing values and filled with mean values.   
+> - Analysed the features of Customer Segmentation using a correlation matrix.
+> - Outlier Analysis & treatment for the Customer Segmentation dataset.
+> - Created new features for Customer Segmentation using RFM Methodology
+> - 
 >
 > ![image](https://github.com/user-attachments/assets/44f7288a-fbb8-4edb-8322-46424511a2ae)
 
