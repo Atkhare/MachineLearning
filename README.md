@@ -1,8 +1,8 @@
 
-# Machine Learning Model
+# Project Title: Customer Segmentation & Recommendation System
 
 > **OVERVIEW** 
-This practical application aims to compare the performance of the classifiers, namely K Nearest Neighbor, Logistic Regression, Decision Trees, and Support Vector Machines. The data was collected by a Portuguese bank that used its contact center to do directed marketing campaigns. The telephone, with a human agent as the interlocutor, was the dominant marketing channel, although sometimes with an auxiliary use of the Internet online banking channel (e.g. by showing information to specifically targeted clients).
+This CAPSTONE project aims to develop Customer Segmentation & Recommendations using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to identify the best-performing algorithm for the subset of data. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used to execute the machine learning algorithms. The project utilizes the CRISP-DM methodology as defined in the diagram and covers all its phases.  
 >
 >${\color{crimson}Used \space CRISP-DM \space model \space to \space achieve \space the \space business \space goals}$
 
