@@ -9,7 +9,12 @@ This CAPSTONE project aims to develop a Customer Segmentation & Recommendations 
 ![image](https://github.com/user-attachments/assets/937f6f2a-b9e1-41e8-8396-193a2c46b57a)
 
 > **BUSINESS UNDERSTANDING**
-The business goal is to find a model that can explain the success of a contact with a client, i.e., if the client subscribes to the term deposit. The classification model can increase campaign efficiency by identifying the main characteristics that affect success, helping in better management of the available resources (e.g., human effort, phone calls, and time), and selecting a high-quality and affordable set of potential buying customers.
+
+> ***CUSTOMER SEGMENTATION***   
+The online sales data is available from retailers and is available at the [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail) for analysis. The business expects to use the RFM methodology, data mining techniques, and machine learning algorithms to derive meaningful customer segmentation, better understand customer purchase behavior, and identify the characteristics of customers in each segment.
+>
+> ***RECOMMENDATION SYSTEM***  
+
 
 > **TECH STACK**
 >> $${\color{mediumblue}Language}$$ `python`
