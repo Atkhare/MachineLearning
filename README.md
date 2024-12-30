@@ -2,7 +2,7 @@
 # Customer Segmentation & Recommendation System
 
 > **OVERVIEW** 
-This CAPSTONE project aims to develop Customer Segmentation & Recommendations using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to identify the best-performing algorithm for the subset of data. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used to execute the machine learning algorithms. The project utilizes the CRISP-DM methodology as defined in the diagram and covers all its phases.  
+This CAPSTONE project aims to develop a Customer Segmentation & Recommendations system using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to identify the best-performing algorithm for the subset of data. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used to execute the machine learning algorithms. The project utilizes the CRISP-DM methodology defined in the diagram and covers all its phases.  
 >
 >${\color{crimson}Used \space CRISP-DM \space model \space to \space achieve \space the \space business \space goals}$
 
