@@ -13,10 +13,10 @@
 
 > **BUSINESS UNDERSTANDING**
 > 
-> CUSTOMER SEGMENTATION
+> ${\color{mediumblue}CUSTOMER \space\ SEGMENTATION}$
 The online sales data is available from retailers and is available at the [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail) for analysis. The business expects to use the RFM methodology, data mining techniques, and machine learning algorithms to derive meaningful customer segmentation, better understand customer purchase behavior, and identify the characteristics of customers in each segment.
 >
-> RECOMMENDATION SYSTEM
+> ${\color{mediumblue}RECOMMENDATION \space\ SYSTEM}$
 The movie data is available from Netflix and is available at the [Kaggle website](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data) as part Netflix prize. The business expects to use the [SURPRISE](https://surprise.readthedocs.io/en/stable/index.html)/ and other recommendation methodologies to develop a customer recommendation system. Compare various algorithms and systems must be able to recommend movies that the customer has not watched earlier. Also, tune the algorithm with the available parameters to minimize the error. 
   
 > **BUSINESS GOAL**
@@ -98,7 +98,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 
 > **MODELING & MODEL EVALUATION**
 >
-> CUSTOMER SEGMENTATION
+> ${\color{mediumblue}CUSTOMER \space\ SEGMENTATION}$
 > The unsupervised machine learning techniques were used to group the customer into meaningful segments.
 >
 > Kmeans Analysis:
@@ -127,10 +127,9 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > Tree MAP for Customer Segments based on RFM score
 > ![Screenshot 2024-12-30 150958](https://github.com/user-attachments/assets/adc1ab42-0a79-401b-b0c6-823fabeb338b)
 >
-> CUSTOMER RECOMMENDATION
->
+> ${\color{mediumblue}RECOMMENDATION \space\ SYSTEM}$ 
 > The SURPRISE modules were used to execute and fine-tune customer algorithms. 
->
+> 
 > Comparision of Scores and execution time post hyperparameter tuning: 
 > ![Screenshot 2024-12-30 153220](https://github.com/user-attachments/assets/5756418f-af13-408c-ae63-e834e048b6f7)
 > ![Screenshot 2024-12-30 153251](https://github.com/user-attachments/assets/1523d3cd-9175-4147-9a85-550557335601)
