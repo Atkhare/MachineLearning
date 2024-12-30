@@ -31,11 +31,12 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >> $${\color{mediumblue}Packages}$$
 >> `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Column Transformer`, `TargetEncoder`, `StandardScaler`, `Pipeline`, `train_test_split`, `KMeans`, `Silhouette_samples', 'Silhouette_score`, `accuracy_score`, `GridSearchCV`, `Cross_Validate`, `Surprise Dataset`, `SVD`, `SVDpp`, `NMF`, `SlopeOne`, `KNNBasic`, `KNNWithMeans`, `KNNBaseline`, `CoClustering`, `NormalPredictor`, `BaselineOnly`
 >>
->> $${\color{mediumblue}Repository-path}$$ [Code Repo](model_comparision.ipynb)
+>> $${\color{mediumblue}Repository-path}$$ [CustomerSegmentation](customerClustering.zip)  [RecommendationSystem](recommendationSystem.zip)
 >>
->> $${\color{mediumblue}Datafile-path}$$ [Data file](bank-additional-full.csv)
+>> $${\color{mediumblue}Datafile-path}$$ [CustomerSegmentation](OnlineRetail.zip)  [RecommendationSystem-Combined_data1](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data)  [RecommendationSystem-MovieTitle](movie_titles.csv) 
 >> 
-
+>> ****Note**** The RecommendationSystem project uses the combined_data1 file, this file has to be directly downloaded from the Netflix page on Kaggle and converted using 1st step of the project to a data file that can be utilized by the project.
+>> 
 > **DATA UNDERSTANDING & PREPARATION**
 > 
 > ${\color{mediumblue}CUSTOMER \space\ SEGMENTATION}$
