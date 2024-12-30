@@ -128,7 +128,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > ![Screenshot 2024-12-30 150958](https://github.com/user-attachments/assets/adc1ab42-0a79-401b-b0c6-823fabeb338b)
 >
 > ${\color{mediumblue}RECOMMENDATION \space\ SYSTEM}$ 
-> The SURPRISE modules were used to execute and fine-tune customer algorithms. 
+> The SURPRISE modules were used to execute and fine-tune customer recommendation algorithms. 
 > 
 > Comparision of Scores and execution time post hyperparameter tuning: 
 > ![Screenshot 2024-12-30 153220](https://github.com/user-attachments/assets/5756418f-af13-408c-ae63-e834e048b6f7)
@@ -144,10 +144,6 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >  
 > ![Screenshot 2024-12-30 153449](https://github.com/user-attachments/assets/a6a75223-c8a8-41bc-b96f-0d3024f28bcc)
 > ![Screenshot 2024-12-30 153512](https://github.com/user-attachments/assets/b501aa9f-5601-4dd4-b5d2-5b9557abd50a)
-
-
-
-
 >
 >
 >**CONCLUSION**
