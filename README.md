@@ -83,16 +83,16 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > |Rating Date   | Movie rating date by customer                              | Date          |
 
 > **FEATURE ANALYSIS**
-> -  
-> - All Features in Customer Segmentation & Recommendation datasets are being analyzed for missing values and filled with mean values.   
-> - Analysed the features of Customer Segmentation using a correlation matrix.
-> - Outlier Analysis & treatment for the Customer Segmentation dataset.
-> - Created new features for Customer Segmentation using RFM Methodology
-> - 
+>   
+> - All Features in Customer Segmentation & Recommendation datasets are being analyzed for missing values and missing values are filled in with the mean values strategy.
+> - Analysed the features in the dataset using a correlation matrix & Pair plots.
+> - Outlier Analysis & treatment for the Customer Segmentation dataset. 
+> - Created new features for Customer Segmentation using RFM Methodology.
+> - Reduce the data volume to execute the algorithms locally.
 >
-> ![image](https://github.com/user-attachments/assets/44f7288a-fbb8-4edb-8322-46424511a2ae)
+![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
+![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
 
- 
 > **MODELING**
 > This is a classifier problem statement. To start with first have to baseline the model to collect the `ModelTrainingTime`, `TrainingAccuracyScore`, and `TestAccuracyScore`.
 > 
