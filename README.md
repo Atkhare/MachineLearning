@@ -1,35 +1,88 @@
 
 # Customer Segmentation & Recommendation System
 
-> **OVERVIEW** 
-This CAPSTONE project aims to develop a Customer Segmentation & Recommendations system using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to identify the best-performing algorithm for the subset of data. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used to execute the machine learning algorithms. The project utilizes the CRISP-DM methodology defined in the diagram and covers all its phases.  
+> **OVERVIEW**
+> 
+> This CAPSTONE project aims to develop a Customer Segmentation & Recommendations system using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to
+> identify the best-performing algorithm for the subset of data. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used
+> to execute the machine learning algorithms. The project utilizes the CRISP-DM methodology defined in the diagram and covers all its phases.  
 >
 >${\color{crimson}Used \space CRISP-DM \space model \space to \space achieve \space the \space business \space goals}$
-
-![image](https://github.com/user-attachments/assets/937f6f2a-b9e1-41e8-8396-193a2c46b57a)
+>
+> ![image](https://github.com/user-attachments/assets/937f6f2a-b9e1-41e8-8396-193a2c46b57a)
 
 > **BUSINESS UNDERSTANDING**
-
-> ***CUSTOMER SEGMENTATION***   
+> 
+> CUSTOMER SEGMENTATION   
 The online sales data is available from retailers and is available at the [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail) for analysis. The business expects to use the RFM methodology, data mining techniques, and machine learning algorithms to derive meaningful customer segmentation, better understand customer purchase behavior, and identify the characteristics of customers in each segment.
 >
-> ***RECOMMENDATION SYSTEM***  
-
+> RECOMMENDATION SYSTEM
+The movie data is available from Netflix and is available at the [Kaggle website](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data) as part Netflix prize. The business expects to use the [SURPRISE](https://surprise.readthedocs.io/en/stable/index.html)/ and other recommendation methodologies to develop a customer recommendation system. Compare various algorithms and systems must be able to recommend movies that the customer has not watched earlier. Also, tune the algorithm with the available parameters to minimize the error. 
+  
+> **BUSINESS GOAL**
+>
+> The Customer Segmentation goal is to organize customers in similar groups, better understand individual customers in each cluster, and identify the customers at risk. This way businesses can have a customer-centric focus & approach to target individual customers.
+> 
+> The Recommendation System's goal is to provide movie recommendations to the customers. The system shall provide top movie recommendations to customers, and identify the top nearest neighbors for customer & movie, and compare different algorithms, and select the best algorithm for recommendation with the least error. 
 
 > **TECH STACK**
->> $${\color{mediumblue}Language}$$ `python`
+>> $${\color{mediumblue}Language}$$ `Python`
 >> 
 >> $${\color{mediumblue}Packages}$$
->> `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Simple Imputer`, `Column Transformer`, `TargetEncoder`, `LabelEncoder`, `StandardScaler`, `Pipeline`, `OneHotEncode`, `Ordinal Encoder`, `PCA`, `RandomForestClassifier`, `train_test_split`, `DummyClassifier`, `classification_report`, `accuracy_score`, `roc_curve`, `roc_auc_score`, `LogisticRegression`, `KNeighborsClassifier`, `DecisionTreeClassifier`, `SVC`, `mutual_info_regression`, `GridSearchCV`
+>> `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Column Transformer`, `TargetEncoder`, `StandardScaler`, `Pipeline`, `train_test_split`, `KMeans`, `Silhouette_samples', 'Silhouette_score`, `accuracy_score`, `GridSearchCV`, `Cross_Validate`, `Surprise Dataset`, `SVD`, `SVDpp`, `NMF`, `SlopeOne`, `KNNBasic`, `KNNWithMeans`, `KNNBaseline`, `CoClustering`, `NormalPredictor`, `BaselineOnly`
 >>
 >> $${\color{mediumblue}Repository-path}$$ [Code Repo](model_comparision.ipynb)
 >>
 >> $${\color{mediumblue}Datafile-path}$$ [Data file](bank-additional-full.csv)
 >> 
 
-> **DATA UNDERSTANDING**
-The dataset comes from the UCI Machine Learning repository [link](https://archive.ics.uci.edu/ml/datasets/bank+marketing). The data is from a Portuguese banking institution and is a collection of the results of multiple marketing campaigns. The article accompanying the dataset [here](CRISP-DM-BANK.pdf) is being referred to for more information on the data and its features.
-> To find the effectiveness of marketing campaigns, Portugese bank reached out to customers from their contact centers and collected the customer perspective. This collected data along with the internal customer data within the bank was used to prepare the dataset features for analysis. The classification goal was to determine if a client would subscribe to a term deposit. The team used 3 iterations of a campaign to fine-tune the predictive model
+> **DATA UNDERSTANDING & PREPARATION**
+> 
+> ${\color{mediumblue}CUSTOMER \space\ SEGMENTATION}$
+> The sales data is downloaded from [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail), it is a transactional data set that contains all the transactions occurring between 01/12/2010 and
+> 09/12/2011 for a retailer and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers.
+> 
+> The original data attributes are:
+> |Feature Name | Description                                | Feature Type  |
+> |-------------|--------------------------------------------|---------------|
+> |InvoiceNo    | A unique number for a transaction          | Categorical   |
+> |StockCode    | Product number for an Item                 | Categorical   |                          
+> |Description  | Product Name                               | Categorical   |
+> |Quantity     | Product quantity in each transaction       | Integer       |
+> |InvoiceDate  | Day & Time when transaction was generated  | Date          |
+> |UnitPrice    | Price of unit product                      | Continuous    |
+> |CustomerID   | ID of customer                             | Categorical   |
+> |Country      | Country where customer resides             | Categorical   |
+>
+> The data attributes added as part of Analysis & Feature Engineering are:
+> |Feature Name 	  | Description                                                               | Feature Type  |
+> |----------------|---------------------------------------------------------------------------|---------------|
+> |Recency      	  | Define how recently the customer made a purchase                          | Integer       |
+> |Frequency    	  | Define how often customers make purchases                                 | Integer       |
+> |Monetary     	  | Define the amount the customer has spent                                  | Float         |
+> |Recency Score	  | Quantile-based discretization on a scale of 1-5 based on Recency value    | Integer       |
+> |Frequency Score | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
+> |Monetary Score  | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
+> |RFM Segment     | ID of customer                                                            | Object        |
+> |Customer Type   | Country where customer resides                                            | Object        |
+>
+> ${\color{mediumblue}RECOMMENDATION \space\ SYSTEM}$
+> The movie rating data is downloaded from [Kaggle website](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data), The movie rating files contain over 100 million ratings from 480 thousand randomly
+> chosen, anonymous customers over 17 thousand movie titles. The data were collected between October 1998 and December 2005 and reflect the distribution of all ratings received during this period. The dataset
+> was trimmed to support the local execution of algorithms, and all predictions and comparisons/ tuning are done on the  trimmed dataset, this may compromise on error measure/ accuracy of the algorithms. The
+> rating data is provided by Netflix, the dataset contains all the movie ratings ranging from 1-5 provided by users. Also, a separate file is provided which contains the movie title/ID for a user.
+>
+> The consolidated file data attributes are:
+> |Feature Name  | Description                                                | Feature Type  |
+> |------------- |------------------------------------------------------------|---------------|
+> |MovieID       | A unique number for a Movie                                | Integer       |
+> |CustomerID    | A unique number given to identify a customer               | Integer       |
+> |Title         | Movie title                                                | Categorical   |
+> |YearOfRelease | Movie release date                                         | Date          |
+> |Ratings       | Movie ratings on a five-star (integral) scale from 1 to 5  | Integer       |
+> |Rating Date   | Movie rating date by customer                              | Date          |
+
+
 
 > **DATA PREPARATION**
 The data is first analyzed on the missing or NAN elements, then the data aggregation is done to analyze the trend & unique components column and row-wise. The data is being imputed for any missing/ unknown values. Also, the data encoding is done for categorical features. The final Dataframe is scaled using `StandardScaler' and split into Test & Train datasets. 
