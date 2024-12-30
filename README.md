@@ -127,7 +127,30 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > Tree MAP for Customer Segments based on RFM score
 > ![Screenshot 2024-12-30 150958](https://github.com/user-attachments/assets/adc1ab42-0a79-401b-b0c6-823fabeb338b)
 >
+> CUSTOMER RECOMMENDATION
+>
+> The SURPRISE modules were used to execute and fine-tune customer algorithms. 
+>
+> Comparision of Scores and execution time post hyperparameter tuning: 
+> ![Screenshot 2024-12-30 153220](https://github.com/user-attachments/assets/5756418f-af13-408c-ae63-e834e048b6f7)
+> ![Screenshot 2024-12-30 153251](https://github.com/user-attachments/assets/1523d3cd-9175-4147-9a85-550557335601)
+> ![Screenshot 2024-12-30 153334](https://github.com/user-attachments/assets/97c67457-7830-40ae-a8bb-044086582b66)
+> ![Screenshot 2024-12-30 153402](https://github.com/user-attachments/assets/b367b787-65a0-4c6f-9190-eae422954364)
 > 
+> Top 3 Movie Recommendations for the Users.
+> 
+> ![Screenshot 2024-12-30 153425](https://github.com/user-attachments/assets/6ca59fe1-31bf-441c-8790-a7e3f31ada7b)
+>
+> Nearest Neighbour based on Movie and Customer
+>  
+> ![Screenshot 2024-12-30 153449](https://github.com/user-attachments/assets/a6a75223-c8a8-41bc-b96f-0d3024f28bcc)
+> ![Screenshot 2024-12-30 153512](https://github.com/user-attachments/assets/b501aa9f-5601-4dd4-b5d2-5b9557abd50a)
+
+
+
+
+>
+>
 >**CONCLUSION**
 > 
 
