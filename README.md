@@ -38,7 +38,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >> $${\color{mediumblue}Packages}$$
 >> `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Column Transformer`, `TargetEncoder`, `StandardScaler`, `Pipeline`, `train_test_split`, `KMeans`, `Silhouette_samples', 'Silhouette_score`, `accuracy_score`, `GridSearchCV`, `Cross_Validate`, `Surprise Dataset`, `SVD`, `SVDpp`, `NMF`, `SlopeOne`, `KNNBasic`, `KNNWithMeans`, `KNNBaseline`, `CoClustering`, `NormalPredictor`, `BaselineOnly`, `Keras`, `Keras.Layers`, `Keras.Losses`, `Keras.Metrics`, `Tensorflow`
 >>
->> $${\color{mediumblue}Repository-path}$$ [CustomerSegmentation](customerClustering.zip)  [RecommendationSystem](recommendationSystem.zip)
+>> $${\color{mediumblue}Repository-path}$$ [CustomerSegmentation](customerClustering.ipynb)  [RecommendationSystem](recommendationSystem.ipynb)
 >>
 >> $${\color{mediumblue}Datafile-path}$$ [CustomerSegmentation](OnlineRetail.zip)  [RecommendationSystem-Combined_data1](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data)  [RecommendationSystem-MovieTitle](movie_titles.csv) 
 >> 
