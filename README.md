@@ -1,7 +1,9 @@
 
-# Customer Segmentation & Recommendation System
+### PROJECT TITLE: Customer Segmentation & Recommendation System
 
-> **OVERVIEW**
+> Author: Atirek Khare
+
+> **EXECUTIVE SUMMARY**
 > 
 > This CAPSTONE project aims to develop a Customer Segmentation & Recommendations system using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to
 > identify the best-performing algorithm for the subset of data. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used
@@ -57,15 +59,15 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >
 > The data attributes added as part of Analysis & Feature Engineering are:
 > |Feature Name 	  | Description                                                               | Feature Type  |
-> |----------------|---------------------------------------------------------------------------|---------------|
+> |----------------|----------------------------------------------------------------------------|---------------|
 > |Recency      	  | Define how recently the customer made a purchase                          | Integer       |
 > |Frequency    	  | Define how often customers make purchases                                 | Integer       |
 > |Monetary     	  | Define the amount the customer has spent                                  | Float         |
 > |Recency Score	  | Quantile-based discretization on a scale of 1-5 based on Recency value    | Integer       |
-> |Frequency Score | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
-> |Monetary Score  | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
-> |RFM Segment     | ID of customer                                                            | Object        |
-> |Customer Type   | Country where customer resides                                            | Object        |
+> |Frequency Score  | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
+> |Monetary Score   | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
+> |RFM Segment      | ID of customer                                                            | Object        |
+> |Customer Type    | Country where customer resides                                            | Object        |
 >
 > ${\color{mediumblue}RECOMMENDATION \space\ SYSTEM}$
 > The movie rating data is downloaded from [Kaggle website](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data), The movie rating files contain over 100 million ratings from 480 thousand randomly
