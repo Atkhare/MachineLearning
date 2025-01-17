@@ -1,14 +1,13 @@
 
 ### PROJECT TITLE: Customer Segmentation & Recommendation System
-
-> Author: Atirek Khare
+> ${\color{mediumblue}Author\space :\space Atirek\space Khare}$
 
 > **EXECUTIVE SUMMARY**
 > 
 > This CAPSTONE project aims to develop a Customer Segmentation & Recommendations system using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to
-> identify the best-performing algorithm for the subset of data. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used
+> identify the best-performing algorithm for the subset of the dataset, and generate the customer segments, and make recommendations to customers. The project utilizes different datasets for segmentation and recommendation. The recommendation project evaluated the neural model to generate the recommendation. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used
 > to execute the machine learning algorithms. The project utilizes the CRISP-DM methodology defined in the diagram and covers all its phases.  
->
+> 
 >${\color{crimson}Used \space CRISP-DM \space model \space to \space achieve \space the \space business \space goals}$
 >
 > ![image](https://github.com/user-attachments/assets/937f6f2a-b9e1-41e8-8396-193a2c46b57a)
