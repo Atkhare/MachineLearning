@@ -36,7 +36,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >> $${\color{mediumblue}Language}$$ `Python`
 >> 
 >> $${\color{mediumblue}Packages}$$
->> `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Column Transformer`, `TargetEncoder`, `StandardScaler`, `Pipeline`, `train_test_split`, `KMeans`, `Silhouette_samples', 'Silhouette_score`, `accuracy_score`, `GridSearchCV`, `Cross_Validate`, `Surprise Dataset`, `SVD`, `SVDpp`, `NMF`, `SlopeOne`, `KNNBasic`, `KNNWithMeans`, `KNNBaseline`, `CoClustering`, `NormalPredictor`, `BaselineOnly`
+>> `Pandas`, `Numpy`, `Seaborn`, `Plotly`, `Matplotlib`, `Column Transformer`, `TargetEncoder`, `StandardScaler`, `Pipeline`, `train_test_split`, `KMeans`, `Silhouette_samples', 'Silhouette_score`, `accuracy_score`, `GridSearchCV`, `Cross_Validate`, `Surprise Dataset`, `SVD`, `SVDpp`, `NMF`, `SlopeOne`, `KNNBasic`, `KNNWithMeans`, `KNNBaseline`, `CoClustering`, `NormalPredictor`, `BaselineOnly`, `Keras`, `Keras.Layers`, `Keras.Losses`, `Keras.Metrics`, `Tensorflow`
 >>
 >> $${\color{mediumblue}Repository-path}$$ [CustomerSegmentation](customerClustering.zip)  [RecommendationSystem](recommendationSystem.zip)
 >>
