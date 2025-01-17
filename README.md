@@ -5,12 +5,18 @@
 > **EXECUTIVE SUMMARY**
 > 
 > This CAPSTONE project aims to develop a Customer Segmentation & Recommendations system using multiple algorithms and strategies available in Machine Learning. It compares the performance of the algorithms to
-> identify the best-performing algorithm for the subset of the dataset, and generate the customer segments, and make recommendations to customers. The project utilizes different datasets for segmentation and recommendation. The recommendation project evaluated the neural model to generate the recommendation. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used
+> identify the best-performing algorithm for the subset of the dataset, generate the customer segments, and make recommendations to customers. The project utilizes different datasets for segmentation and recommendation. The recommendation project evaluated the neural model to generate the recommendation. The data for the project is downloaded from [UCI](https://archive.ics.uci.edu/) and [Kaggle](https://www.kaggle.com/) and a subset of data is used
 > to execute the machine learning algorithms. The project utilizes the CRISP-DM methodology defined in the diagram and covers all its phases.  
 > 
 >${\color{crimson}Used \space CRISP-DM \space model \space to \space achieve \space the \space business \space goals}$
 >
 > ![image](https://github.com/user-attachments/assets/937f6f2a-b9e1-41e8-8396-193a2c46b57a)
+
+> **PROBLEM STATEMENT**
+> The project goal is to analyze the customer data to build a segmentation model and generate recommendations. The segmentation and recommendation use two different sources of datasets, and available machine models are executed and compared for the result. 
+>
+> 1. ${\color{mediumblue}Customer \space\ Segmentation}$: The goal is to use RFM methodology and generate meaningful customer segments using unsupervised learning algorithms. Also, segment potential customers based on their loyalty to the online store.  
+> 2. ${\color{mediumblue}Recommendation \space\ System}$: The goal is to generate movie recommendations for the customer, using available algorithms available and comparing the different algorithms. It also identifies the nearest neighbor for the movie and user based on the history dataset.   
 
 > **BUSINESS UNDERSTANDING**
 > 
