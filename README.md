@@ -43,88 +43,88 @@ The movie data is available from Netflix and is available at the [Kaggle website
  
 > **DATA UNDERSTANDING & PREPARATION**
 >
->> ***Data Acquisition***
->> 
->> ${\color{mediumblue}Customer \space\ Segmentation}$
->> The sales data is downloaded from [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail), it is a transactional data set that contains all the transactions occurring between 01/12/2010 and
->> 09/12/2011 for a retailer and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. 
->> 
->> The original data attributes are:
->> 
->> |Feature Name | Description                                | Feature Type  |
->> |-------------|--------------------------------------------|---------------|
->> |InvoiceNo    | A unique number for a transaction          | Categorical   |
->> |StockCode    | Product number for an Item                 | Categorical   |                          
->> |Description  | Product Name                               | Categorical   |
->> |Quantity     | Product quantity in each transaction       | Integer       |
->> |InvoiceDate  | Day & Time when transaction was generated  | Date          |
->> |UnitPrice    | Price of unit product                      | Continuous    |
->> |CustomerID   | ID of customer                             | Categorical   |
->> |Country      | Country where customer resides             | Categorical   |
->>
->> The data attributes added after analysis & feature engineering are:
->> 
->> |Feature Name 	  | Description                                                               | Feature Type  |
->> |----------------|---------------------------------------------------------------------------|---------------|
->> |Recency      	  | Define how recently the customer made a purchase                          | Integer       |
->> |Frequency    	  | Define how often customers make purchases                                 | Integer       |
->> |Monetary     	  | Define the amount the customer has spent                                  | Float         |
->> |Recency Score	  | Quantile-based discretization on a scale of 1-5 based on Recency value    | Integer       |
->> |Frequency Score | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
->> |Monetary Score  | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
->> |RFM Segment     | ID of customer                                                            | Object        |
->> |Customer Type   | Country where customer resides                                            | Object        |
->>
->> ${\color{mediumblue}Recommendation \space\ System}$
->> 
->> The movie rating data is downloaded from [Kaggle website](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data), The movie rating files contain over 100 million ratings from 480 thousand randomly
->> chosen anonymous customers and over 17 thousand movie titles. The data were collected between October 1998 and December 2005 and reflect the distribution of all ratings received during this period. The dataset
->> was trimmed to support the local execution of algorithms, and all predictions and comparisons/ tuning are done on the  trimmed dataset, this may compromise on error measure/ accuracy of the algorithms. The
->> rating data is provided by Netflix, the dataset contains all the movie ratings ranging from 1-5 provided by users. Also, a separate file is provided which contains the movie title/ID for a user.
->>
->> The consolidated file data attributes are:
->> 
->> |Feature Name  | Description                                                | Feature Type  |
->> |------------- |------------------------------------------------------------|---------------|
->> |MovieID       | A unique number for a Movie                                | Integer       |
->> |CustomerID    | A unique number given to identify a customer               | Integer       |
->> |Title         | Movie title                                                | Categorical   |
->> |YearOfRelease | Movie release date                                         | Date          |
->> |Ratings       | Movie ratings on a five-star (integral) scale from 1 to 5  | Integer       |
->> |Rating Date   | Movie rating date by customer                              | Date          |
+> ***Data Acquisition***
+> 
+> ${\color{mediumblue}Customer \space\ Segmentation}$
+> The sales data is downloaded from [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail), it is a transactional data set that contains all the transactions occurring between 01/12/2010 and
+> 09/12/2011 for a retailer and registered non-store online retail. The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers. 
+> 
+> The original data attributes are:
+> 
+> |Feature Name | Description                                | Feature Type  |
+> |-------------|--------------------------------------------|---------------|
+> |InvoiceNo    | A unique number for a transaction          | Categorical   |
+> |StockCode    | Product number for an Item                 | Categorical   |                          
+> |Description  | Product Name                               | Categorical   |
+> |Quantity     | Product quantity in each transaction       | Integer       |
+> |InvoiceDate  | Day & Time when transaction was generated  | Date          |
+> |UnitPrice    | Price of unit product                      | Continuous    |
+> |CustomerID   | ID of customer                             | Categorical   |
+> |Country      | Country where customer resides             | Categorical   |
+>
+> The data attributes added after analysis & feature engineering are:
+> 
+> |Feature Name 	  | Description                                                               | Feature Type  |
+> |----------------|---------------------------------------------------------------------------|---------------|
+> |Recency      	  | Define how recently the customer made a purchase                          | Integer       |
+> |Frequency    	  | Define how often customers make purchases                                 | Integer       |
+> |Monetary     	  | Define the amount the customer has spent                                  | Float         |
+> |Recency Score	  | Quantile-based discretization on a scale of 1-5 based on Recency value    | Integer       |
+> |Frequency Score | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
+> |Monetary Score  | Quantile-based discretization on a scale of 1-5 based on Frequency value  | Integer       |
+> |RFM Segment     | ID of customer                                                            | Object        |
+> |Customer Type   | Country where customer resides                                            | Object        |
+>
+> ${\color{mediumblue}Recommendation \space\ System}$
+> 
+> The movie rating data is downloaded from [Kaggle website](https://www.kaggle.com/datasets/netflix-inc/netflix-prize-data), The movie rating files contain over 100 million ratings from 480 thousand randomly
+> chosen anonymous customers and over 17 thousand movie titles. The data were collected between October 1998 and December 2005 and reflect the distribution of all ratings received during this period. The dataset
+> was trimmed to support the local execution of algorithms, and all predictions and comparisons/ tuning are done on the  trimmed dataset, this may compromise on error measure/ accuracy of the algorithms. The
+> rating data is provided by Netflix, the dataset contains all the movie ratings ranging from 1-5 provided by users. Also, a separate file is provided which contains the movie title/ID for a user.
+>
+> The consolidated file data attributes are:
+> 
+> |Feature Name  | Description                                                | Feature Type  |
+> |------------- |------------------------------------------------------------|---------------|
+> |MovieID       | A unique number for a Movie                                | Integer       |
+> |CustomerID    | A unique number given to identify a customer               | Integer       |
+> |Title         | Movie title                                                | Categorical   |
+> |YearOfRelease | Movie release date                                         | Date          |
+> |Ratings       | Movie ratings on a five-star (integral) scale from 1 to 5  | Integer       |
+> |Rating Date   | Movie rating date by customer                              | Date          |
 
->> ***Feature Analysis***
->>   
->> - All Features in Customer Segmentation & Recommendation datasets are being analyzed for missing values and missing values are filled in with the mean values strategy.
->> - The customer segmentation dataset is scaled using a Standard scaler pipeline
->>  
->>   ![Screenshot 2025-01-18 105115](https://github.com/user-attachments/assets/5717ecb7-4461-418d-9408-9b48d7b1e3ea)
+> ***Feature Analysis***
+>   
+> - All Features in Customer Segmentation & Recommendation datasets are being analyzed for missing values and missing values are filled in with the mean values strategy.
+> - The customer segmentation dataset is scaled using a Standard scaler pipeline
+>  
+>   ![Screenshot 2025-01-18 105115](https://github.com/user-attachments/assets/5717ecb7-4461-418d-9408-9b48d7b1e3ea)
 
->> - The overall missing value count is very low compared to the data volume.
->> - Analysed the features in the dataset using a correlation matrix & Pair plots.
->> - Outlier Analysis & treatment for the Customer Segmentation dataset. 
->> - Created new features for Customer Segmentation using RFM Methodology.
->> - Reduce the data volume to execute the algorithms locally.
->>
->> - Pair Plot Analysis of New Features in Customer Segmentation.
->>   - The graph shows the linear relationship of data between the frequency of visits and monetary value.
->>   - Monetary and recency do not hold any definitive relationship of data.
->>   - The RFM features show the majorly left concentrated data points. 
->>     
->> ![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
->> 
->> - Conducted the outlier analysis for features. 
->>   - The outliers appear more in monetary and frequency plots. 
->>   - The outliers are treated by considering the features data in the first & third quartiles (25% - 75%).
->>   
->> ![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
->> 
->> - Conducted the correlation matrix analysis.
->>   - The dataset is scaled before the generation of the correlation matrix.
->>   - The majority of features do not show tight coupling.
->>   - The frequency and monetary score are dependent.     
->> 
->> ![Screenshot 2025-01-18 112030](https://github.com/user-attachments/assets/4bcffafe-ef66-4700-ba5b-0564289dde4a)
+> - The overall missing value count is very low compared to the data volume.
+> - Analysed the features in the dataset using a correlation matrix & Pair plots.
+> - Outlier Analysis & treatment for the Customer Segmentation dataset. 
+> - Created new features for Customer Segmentation using RFM Methodology.
+> - Reduce the data volume to execute the algorithms locally.
+>
+> - Pair Plot Analysis of New Features in Customer Segmentation.
+>   - The graph shows the linear relationship of data between the frequency of visits and monetary value.
+>   - Monetary and recency do not hold any definitive relationship of data.
+>   - The RFM features show the majorly left concentrated data points. 
+>     
+> ![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
+> 
+> - Conducted the outlier analysis for features. 
+>   - The outliers appear more in monetary and frequency plots. 
+>   - The outliers are treated by considering the features data in the first & third quartiles (25% - 75%).
+>   
+> ![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
+> 
+> - Conducted the correlation matrix analysis.
+>   - The dataset is scaled before the generation of the correlation matrix.
+>   - The majority of features do not show tight coupling.
+>   - The frequency and monetary score are dependent.     
+> 
+> ![Screenshot 2025-01-18 112030](https://github.com/user-attachments/assets/4bcffafe-ef66-4700-ba5b-0564289dde4a)
 
 > **MODELING & MODEL EVALUATION**
 >
