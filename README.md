@@ -109,31 +109,39 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >> - Pair Plot Analysis of New Features in Customer Segmentation.
 >>   - The graph shows the linear relationship of data between the frequency of visits and monetary value.
 >>   - Monetary and recency do not hold any definitive relationship of data.
->>   - The RFM features show the majorly left concentrated data points.
+>>   - The RFM features show the majorly left concentrated data points. 
 >>     
 >> ![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
 >> 
->> - Conducted the outlier analysis for features.
->>   - The outlier appears more in monetary and frequency plots. 
+>> - Conducted the outlier analysis for features. 
+>>   - The outliers appear more in monetary and frequency plots. 
 >>   - The outliers are treated by considering the features data in the first & third quartiles (25% - 75%).
 >>   
 >> ![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
 >> 
->> - Conducted the correlation matrix analysis, post-scaling the data, the features do not look closely related.
+>> - Conducted the correlation matrix analysis.
+>>   - The dataset is scaled before the generation of the correlation matrix.
+>>   - The majority of features do not show tight coupling.
+>>   - The frequency and monetary score are dependent.     
 >> 
 >> ![Screenshot 2025-01-18 112030](https://github.com/user-attachments/assets/4bcffafe-ef66-4700-ba5b-0564289dde4a)
 
 > **MODELING & MODEL EVALUATION**
 >
 > ${\color{mediumblue}Customer \space\ Segmentation}$
-> The unsupervised machine learning techniques were used to group the customer into meaningful segments.
+> 
+> The unsupervised machine learning techniques were used to group the customer into meaningful segments. After data analysis, new features were added to the dataset and multiple algorithms were tried on the new feature to group the customer. The results from all the algorithms show that data can be grouped into 5 meaningful clusters.  
 >
 > Kmeans Analysis:
-> Elbow method to Identify the number of optimum clusters: 
+> 
+>  - Elbow method to Identify the number of optimum clusters:
+>    - The graph shows bend at 2 & 5 clusters.
+>    - Based on the graph there are 5 clusters to be considered for analysis.  
+>  
 > ![Screenshot 2024-12-30 150348](https://github.com/user-attachments/assets/c10f314c-ceef-4466-8ea5-ba7f650c3a79)
 >
-> 3D view of Customer Clusters by Kmeans 
-> 
+>  - 3D view of Customer Clusters by Kmeans 
+>    -   
 > ![Screenshot 2024-12-30 150411](https://github.com/user-attachments/assets/664b8dba-3563-4b35-9560-5ca77a7a423e)
 >
 > Silhouette Analsysi & Score
