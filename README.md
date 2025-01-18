@@ -13,10 +13,7 @@
 > ![image](https://github.com/user-attachments/assets/937f6f2a-b9e1-41e8-8396-193a2c46b57a)
 
 > **PROBLEM STATEMENT**
-> The project goal is to analyze the customer data to build a segmentation model and generate recommendations. The segmentation and recommendation use two different sources of datasets, and available machine models are executed and compared for the result. 
->
-> 1. ${\color{mediumblue}Customer \space\ Segmentation}$: The goal is to use RFM methodology and generate meaningful customer segments using unsupervised learning algorithms. Also, segment potential customers based on their loyalty to the online store.  
-> 2. ${\color{mediumblue}Recommendation \space\ System}$: The goal is to generate movie recommendations for the customer, using available algorithms available and comparing the different algorithms. It also identifies the nearest neighbor for the movie and user based on the history dataset.   
+> The problem statement is to analyze the customer data using machine learning models to build customer segmentation and generate recommendations. The segmentation and recommendation use two different sources of datasets, and available machine models are executed and compared for the result. 
 
 > **BUSINESS UNDERSTANDING**
 > 
@@ -101,7 +98,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > Pair Plot Analysis of New Features in Customer Segmentation
 > ![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
 > 
-> Correlation Matrix analysis in Customer Segmentation
+> Outlier analysis for Features
 > ![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
 
 > **MODELING & MODEL EVALUATION**
