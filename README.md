@@ -29,6 +29,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > The Recommendation System aims to provide movie recommendations to the customers. The system shall provide top movie recommendations to customers, and identify the top nearest neighbors for customer & movie, and compare different algorithms, and select the best algorithm for recommendation with the least error. 
 
 > **TECH STACK**
+> 
 > $${\color{mediumblue}Language}$$ `Python`
 > 
 > $${\color{mediumblue}Packages}$$
@@ -126,13 +127,13 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > 
 > ![Screenshot 2025-01-18 112030](https://github.com/user-attachments/assets/4bcffafe-ef66-4700-ba5b-0564289dde4a)
 
-> **MODELING & MODEL EVALUATION**
+> **MODELING MODEL EVALUATION**
 >
 > ${\color{mediumblue}Customer \space\ Segmentation}$
 > 
 > The unsupervised machine learning techniques were used to group the customer into meaningful segments. After data analysis, new features were added to the dataset and multiple algorithms were tried on the new feature to group the customer. The results from all the algorithms show that data can be grouped into 5 meaningful clusters.  
 >
-> Kmeans Analysis:
+> ***1. Kmeans Analysis:***
 > 
 >  - Elbow method to Identify the number of optimum clusters:
 >    - The graph shows bend at 2 & 5 clusters.
@@ -140,15 +141,42 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >  
 > ![Screenshot 2024-12-30 150348](https://github.com/user-attachments/assets/c10f314c-ceef-4466-8ea5-ba7f650c3a79)
 >
->  - 3D view of Customer Clusters by Kmeans 
->    -   
+>  - Plotted the Customer Clusters by Kmeans
+>    - There are 5 distinct groups formed by the K-means algorithm.
+>    - The clusters are grouped on the customer's recent visits to the website.
+>    - The customer visits and monetary group data are in a linear relation.
+>   
 > ![Screenshot 2024-12-30 150411](https://github.com/user-attachments/assets/664b8dba-3563-4b35-9560-5ca77a7a423e)
 >
-> Silhouette Analsysi & Score
-> 
+> ![Screenshot 2025-01-18 130310](https://github.com/user-attachments/assets/b4904bc3-3ec4-4661-862f-60065b63fba8)
+![Screenshot 2025-01-18 130558](https://github.com/user-attachments/assets/a130c552-a45b-4074-aef9-2e7b202ade53)
+>
+> ***2. Silhouette Analsysi & Score***
+>
+>  - The Silhouette score is decreasing as the number of clusters is increasing.
+>    - For n_clusters = 2 The average silhouette_score is : 0.6387
+>    - For n_clusters = 3 The average silhouette_score is : 0.5611
+>    - For n_clusters = 4 The average silhouette_score is : 0.4793
+>    - For n_clusters = 5 The average silhouette_score is : 0.4423
+>    - For n_clusters = 6 The average silhouette_score is : 0.4185    
+>  - After the fifth cluster the outliers start to appear.
+>  - Selecting 5 clusters seems to be the optimum choice for this dataset.
+>    
 > ![Screenshot 2024-12-30 150505](https://github.com/user-attachments/assets/63fe7af1-018b-43d5-ab39-5149bb121eee)
 >
+> ***3. DBScan***
+>
+> - Selected the optimum EPS value using nearest neighbor 
+>   - The plot shows an optimum EPS value between 0.1 & 0.2
+>   - The DBScan at 0.118 resulted in 5 customer clusters.
+>   - The plot results in similar segments as other algorithms have generated. Sharing the monetary & frequency plot.
+>     
+> ![image](https://github.com/user-attachments/assets/eebfeade-c2c8-4ad4-95be-1f3bca3a5376)
+> ![image](https://github.com/user-attachments/assets/0f7fe1b8-dd5c-44cc-a1f3-bab6a7d924bc)
+>
 > Customer Cluster Wise RFM Score:
+>   - Cluster 1 has the highest number of customers. And the cluster customers are frequent visitors and contribute high monetary value.
+>   - Cluster 2 & 3 customers need attention, as they have a low recent score even they have contributed more to monetary value. 
 > 
 > ![Screenshot 2024-12-30 150819](https://github.com/user-attachments/assets/299e42a2-80c1-44e5-8698-03675ac76218)
 >
