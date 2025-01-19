@@ -127,7 +127,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > 
 > ![Screenshot 2025-01-18 112030](https://github.com/user-attachments/assets/4bcffafe-ef66-4700-ba5b-0564289dde4a)
 
-> **MODELING MODEL EVALUATION**
+> **MODELING**
 >
 > ${\color{mediumblue}Customer \space\ Segmentation}$
 > 
@@ -174,15 +174,41 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > ![image](https://github.com/user-attachments/assets/eebfeade-c2c8-4ad4-95be-1f3bca3a5376)
 > ![image](https://github.com/user-attachments/assets/0f7fe1b8-dd5c-44cc-a1f3-bab6a7d924bc)
 >
-> Customer Cluster Wise RFM Score:
->   - Cluster 1 has the highest number of customers. And the cluster customers are frequent visitors and contribute high monetary value.
->   - Cluster 2 & 3 customers need attention, as they have a low recent score even they have contributed more to monetary value. 
+> ${\color{mediumblue}Recommendation \space\ System}$
+> 
+> |Algorithms                        | Description                                                                    |
+> |----------------------------------|--------------------------------------------------------------------------------|
+> |SVD                               | Matrix factorization-based algorithms                                          |
+> |SVD++                             | Matrix factorization-based algorithms considering implicit ratings             |                           
+> |NFM                               | Collaborative filtering algorithm based on non-negative Matrix Factorization.  |                                                     |
+> |Slope One                         | Collaborative filtering algorithm.                                             | 
+> |Co-Clustering                     | Collaborative filtering algorithm based on co-clustering.                      |   
+> |KNN Nearest Neighbor              | K-nearest neighbors  inspired algorithm.                                       | 
+> |Normal Predictor                  | Predict random rating based on the normal distribution of the training set.    |
+> |Neural Network(Tensor/ Keras API) | Use dense layers and weights to process the relationship between user/ movies. | 
+
+
+> **MODEL EVALUATION**
+>
+> ${\color{mediumblue}Customer \space\ Segmentation}$
+> 
+> - Customer Cluster Wise RFM Score:
+>   - Cluster 1 has the highest number of customers. This cluster's customers are frequent visitors and contribute high monetary value.
+>   - Cluster 2 & 3 customers need attention, as they have a low recent score even though they have contributed more to monetary value. 
 > 
 > ![Screenshot 2024-12-30 150819](https://github.com/user-attachments/assets/299e42a2-80c1-44e5-8698-03675ac76218)
 >
-> Customer cluster-wise peak selling time
+> - Customer cluster-wise count & peak selling time
+>   - The number of customers in the first segment is the highest, and these customer's contributions are the highest as well.
+>   - The number of customers in segment two is comparatively lowest.
+>   - The peak selling time for the website across all the clusters is 11:00 Am-2:00 Pm
+>     
+> <p>
+>  <img src="https://github.com/user-attachments/assets/1cbfccda-7d61-4c71-bd1d-2fc56db3c379" hspace="5" width="350" height="350" >
+>  <img src="https://github.com/user-attachments/assets/0d9f21d2-8742-46f9-afe1-c0812ac2bd3b" hspace="5" width="350" height="350" >
+> </p>
+>
 > 
-> ![Screenshot 2024-12-30 150853](https://github.com/user-attachments/assets/4a0cd93b-1e82-48b7-abc5-23bd24448550)
 >
 > Customer cluster-wise Top selling month 
 > ![Screenshot 2024-12-30 150918](https://github.com/user-attachments/assets/91092ece-b315-4856-b3c4-1cf9061b8574)
