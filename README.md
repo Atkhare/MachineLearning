@@ -170,10 +170,13 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >   - The plot shows an optimum EPS value between 0.1 & 0.2
 >   - The DBScan at 0.118 resulted in 5 customer clusters.
 >   - The plot results in similar segments as other algorithms have generated. Sharing the monetary & frequency plot.
->     
-> ![image](https://github.com/user-attachments/assets/eebfeade-c2c8-4ad4-95be-1f3bca3a5376)
-> ![image](https://github.com/user-attachments/assets/0f7fe1b8-dd5c-44cc-a1f3-bab6a7d924bc)
 >
+> <p>
+>  <img src="https://github.com/user-attachments/assets/eebfeade-c2c8-4ad4-95be-1f3bca3a5376" hspace="5" width="350" height="350" >
+>  <img src="https://github.com/user-attachments/assets/0f7fe1b8-dd5c-44cc-a1f3-bab6a7d924bc" hspace="5" width="350" height="350" >
+> </p>    
+>
+> 
 > ${\color{mediumblue}Recommendation \space\ System}$
 > 
 > |Algorithms                        | Description                                                                    |
