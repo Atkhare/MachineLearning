@@ -213,26 +213,67 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >
 > 
 >
-> Customer cluster-wise Top selling month 
+> - Customer cluster-wise Top selling month 
+>   - Website sees a peak in sales volume from August to December.
+>   - Cluster-wise sales volume differs from the overall peak period.
+>   - Clusters 2 & 3 see sales at different times of the year, for the given dataset.
+>
 > ![Screenshot 2024-12-30 150918](https://github.com/user-attachments/assets/91092ece-b315-4856-b3c4-1cf9061b8574)
->
-> Tree MAP for Customer Segments based on RFM score
-> ![Screenshot 2024-12-30 150958](https://github.com/user-attachments/assets/adc1ab42-0a79-401b-b0c6-823fabeb338b)
->
-> ${\color{mediumblue}Recommendation \space\ System}$ 
-> The SURPRISE modules were used to execute and fine-tune customer recommendation algorithms. 
 > 
-> Comparision of Scores and execution time post hyperparameter tuning: 
+> - Tree MAP for Customer Segment
+>   - The segmentation for customers is based on the RFM score
+>   - Around 7k customers are at risk and 2.2k customers are lost by the retail website.
+> 
+> ![Screenshot 2024-12-30 150958](https://github.com/user-attachments/assets/adc1ab42-0a79-401b-b0c6-823fabeb338b)
+ 
+> ${\color{mediumblue}Recommendation \space\ System}$
+>
+> The SURPRISE & Neural models were used to execute and fine-tune customer recommendation algorithms. 
+> 
+> - Comparision of Scores and execution time post hyperparameter tuning of SURPRISE algorithms:
+>   - The SVD++ has least RMSE & MAE score for Suprise library.
+>   - The SVD++ takes high time to execute when compared with other algorithms.
+>   - KNN is the nest closest algorithm, with less execution time compared to SVD++
+>     
 > ![Screenshot 2024-12-30 153220](https://github.com/user-attachments/assets/5756418f-af13-408c-ae63-e834e048b6f7)
 > ![Screenshot 2024-12-30 153251](https://github.com/user-attachments/assets/1523d3cd-9175-4147-9a85-550557335601)
 > ![Screenshot 2024-12-30 153334](https://github.com/user-attachments/assets/97c67457-7830-40ae-a8bb-044086582b66)
 > ![Screenshot 2024-12-30 153402](https://github.com/user-attachments/assets/b367b787-65a0-4c6f-9190-eae422954364)
-> 
-> Top 3 Movie Recommendations for the Users.
+>
+>  - Neural Models Stats
+>    - Epochs vs Loss
+>      - The loss decreases as the number of epochs for the neural model increases.
+>      - After 15 epochs the loss reduction is very minimal.
+>      - Considered 20 epochs for execution as they have a minimal loss.   
+>        
+>      ![image](https://github.com/user-attachments/assets/1fd66a5c-7736-43f4-9c75-a18c9b215b49)
+>
+>  - MAE score Stats
+>    - MAE vs Epochs
+>      - The MAE score decreases as the number of epochs increases.
+>      - After 5 epochs the MAE score reduction is minimal.
+>      - At 20 epochs the MAEscore is 0.128   
+>   
+>    ![image](https://github.com/user-attachments/assets/1c90d5c2-952a-4678-8e93-4e0a6ed6b719)
+>
+>  - RMSE score Stats
+>    - RMSE vs Epochs
+>      - The RMSE score decreases as the number of epochs increases.
+>      - Behaviour is similar to MAE score, after 5 epochs RMSE score reduction is minimal.
+>      - At 20 epochs the RMSE score is 0.16   
+>
+>   ![image](https://github.com/user-attachments/assets/1adbca80-c5f7-4294-a087-967fa7ca8986)
+>
+  
+> - Top 3 Movie Recommendations for the Users.
 > 
 > ![Screenshot 2024-12-30 153425](https://github.com/user-attachments/assets/6ca59fe1-31bf-441c-8790-a7e3f31ada7b)
 >
-> Nearest Neighbour based on Movie and Customer
+> - Top 3 Movie Recommendations for the Users Using Neural Model
+>
+> ![image](https://github.com/user-attachments/assets/73d27f01-f60c-4ee3-a5bd-5a988344aeb4)
+>
+> - Nearest Neighbour based on Movie and Customer
 >  
 > ![Screenshot 2024-12-30 153449](https://github.com/user-attachments/assets/a6a75223-c8a8-41bc-b96f-0d3024f28bcc)
 > ![Screenshot 2024-12-30 153512](https://github.com/user-attachments/assets/b501aa9f-5601-4dd4-b5d2-5b9557abd50a)
