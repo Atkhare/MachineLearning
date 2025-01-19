@@ -111,21 +111,27 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >   - The graph shows the linear relationship of data between the frequency of visits and monetary value.
 >   - Monetary and recency do not hold any definitive relationship of data.
 >   - The RFM features show the majorly left concentrated data points. 
->     
-> ![Screenshot 2024-12-30 135951](https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f)
+> <p>
+>  <img src="https://github.com/user-attachments/assets/f857d5f5-2d39-45c8-a217-67eee03dda9f" hspace="5" width="600" height="350" >
+> </p>   
 > 
 > - Conducted the outlier analysis for features. 
 >   - The outliers appear more in monetary and frequency plots. 
 >   - The outliers are treated by considering the features data in the first & third quartiles (25% - 75%).
 >   
-> ![Screenshot 2024-12-30 135909](https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b)
+> <p>
+>  <img src="https://github.com/user-attachments/assets/cf53ca9f-377e-4af5-bc79-0aa4f5e5984b" hspace="5" width="600" height="350" >
+> </p> 
+>
 > 
 > - Conducted the correlation matrix analysis.
 >   - The dataset is scaled before the generation of the correlation matrix.
 >   - The majority of features do not show tight coupling.
 >   - The frequency and monetary score are dependent.     
 > 
-> ![Screenshot 2025-01-18 112030](https://github.com/user-attachments/assets/4bcffafe-ef66-4700-ba5b-0564289dde4a)
+> <p>
+>  <img src="https://github.com/user-attachments/assets/4bcffafe-ef66-4700-ba5b-0564289dde4a" hspace="5" width="600" height="600" >
+> </p> 
 
 > **MODELING**
 >
