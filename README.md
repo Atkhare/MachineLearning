@@ -145,11 +145,11 @@ The movie data is available from Netflix and is available at the [Kaggle website
 >    - There are 5 distinct groups formed by the K-means algorithm.
 >    - The clusters are grouped on the customer's recent visits to the website.
 >    - The customer visits and monetary group data are in a linear relation.
->   
-> ![Screenshot 2024-12-30 150411](https://github.com/user-attachments/assets/664b8dba-3563-4b35-9560-5ca77a7a423e)
->
-> ![Screenshot 2025-01-18 130310](https://github.com/user-attachments/assets/b4904bc3-3ec4-4661-862f-60065b63fba8)
-![Screenshot 2025-01-18 130558](https://github.com/user-attachments/assets/a130c552-a45b-4074-aef9-2e7b202ade53)
+> <p>
+>  <img src="https://github.com/user-attachments/assets/664b8dba-3563-4b35-9560-5ca77a7a423e" hspace="5" width="300" height="350" >
+>  <img src="https://github.com/user-attachments/assets/b4904bc3-3ec4-4661-862f-60065b63fba8" hspace="5" width="300" height="350" >
+>  <img src="https://github.com/user-attachments/assets/a130c552-a45b-4074-aef9-2e7b202ade53" hspace="5" width="300" height="350" >  
+> </p> 
 >
 > ***2. Silhouette Analsysi & Score***
 >
@@ -222,7 +222,7 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > 
 > - Tree MAP for Customer Segment
 >   - The segmentation for customers is based on the RFM score
->   - Around 7k customers are at risk and 2.2k customers are lost by the retail website.
+>   - Around 7k customers are at risk and the retail website almost loses 2.2k customers.
 > 
 > ![Screenshot 2024-12-30 150958](https://github.com/user-attachments/assets/adc1ab42-0a79-401b-b0c6-823fabeb338b)
  
@@ -278,11 +278,26 @@ The movie data is available from Netflix and is available at the [Kaggle website
 > ![Screenshot 2024-12-30 153449](https://github.com/user-attachments/assets/a6a75223-c8a8-41bc-b96f-0d3024f28bcc)
 > ![Screenshot 2024-12-30 153512](https://github.com/user-attachments/assets/b501aa9f-5601-4dd4-b5d2-5b9557abd50a)
 >
->
+
 >**CONCLUSION**
+
+> After trying multiple models for Customer clustering, almost all the models converge to similar results with the same number of optimal customer clusters. Using the RFM  > feature, customers are further clustered in various focus areas and served based on individual choices. Identified the peak selling day/ time for the customers, along
+> with the top-selling items for the customer segment.
+>
+> Cluster 1 has the highest count of the number of customers and customers in this segment are the most frequent visitors to the website, and contribute more in monetary
+> value. More business analysis is required on the cluster 2 & 3 customers as they were frequent visitors and have contributed fairly in terms of monetary value to the
+> website, however, due to some reason they have not visited the website as their recency score is way lower than other segment.
+>
+> Lastly have categorized the customers with RFM scores in multiple segments like potential loyalists, need attention, lost customers, and so on. The business can target
+> individual segments to generate more sales.
+
+> Applied different types of algorithms to generate recommendations for the customer. On comparing the scores, the neural network performed better; however, the model
+> learning and execution time were very high. In the surprise library, the SVD++ showed good results for recommendation and tried to extract the nearest neighbor for movies > and users based on similarity.
 >
 >
-> **REFERENCES**    
+
+>**REFERENCES**
+>     
 > - [UCI website](https://archive.ics.uci.edu/dataset/352/online+retail)
 > - [SURPRISE](https://surprise.readthedocs.io/en/stable/index.html)
 > - [KAGGLE](https://www.kaggle.com/) 
